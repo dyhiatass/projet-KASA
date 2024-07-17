@@ -1,0 +1,36 @@
+.App {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: Roboto;
+
+    h1 {
+        font-weight: bold;
+        font-size: 40px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-top: 20px;
+            font-weight: bold;
+            font-family: "Open Sans";
+        }
+
+        input {
+            border: 1px solid gray;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+
+        textarea {
+            color: red;
+        }
+    }
+}

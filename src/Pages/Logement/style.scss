@@ -1,0 +1,127 @@
+.logement {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: Montserrat;
+
+    .slider {
+        position: relative;
+
+        &__image {
+            height: 415px;
+            width: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 25px;
+        }
+
+        .numbers {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 80px;
+            cursor: pointer;
+
+            &.left {
+                left: 20px;
+            }
+
+            &.right {
+                right: 20px;
+            }
+        }
+    }
+
+    .infos {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            color: #FF6060;
+            font-size: 36px;
+            font-weight: 500;
+        }
+
+        .host {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            h2 {
+                color: #FF6060;
+                text-align: right;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            img {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    h3 {
+        color: #FF6060;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        align-items: center;
+        margin-bottom: 25px;
+
+        .tags {
+            display: flex;
+            gap: 10px;
+
+            .tag {
+                border-radius: 10px;
+                background: #FF6060;
+                color: white;
+                // height: 25px;
+                padding: 5px 10px;
+                min-width: 115px;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+
+        .stars {
+            .star {
+                height: 36px;
+                width: 36px;
+
+                &.orange * {
+                    fill: #FF6060
+                }
+
+                &.gray * {
+                    fill: #E3E3E3
+                }
+            }
+        }
+    }
+
+    .accordions {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
